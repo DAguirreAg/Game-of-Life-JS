@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1>Conway's Game of Life</h1>
+
+        <canvas id="canvas" width="600" height="200"></canvas>
+
+        <div id="controls">
+            <h3>Controls</h3>
+            <div>
+                <button type="button" id="run-stop" onclick="auto_run()">Run/Stop</button>
+                <button type="button" id="clear" onclick="clean_canvas()">Clear</button>
+                <button type="button" id="step" onclick="next_step()">Step</button>
+            </div>
+        </div>
+
+        <div id="patterns">
+            <h3>Patterns</h3>
+            <div>
+                <button type="button" id="still-life" disabled>Still Life</button>
+                <button type="button" id="gliders" disabled>Gliders</button>
+                <button type="button" id="acorns" disabled>Acorns</button>
+                <button type="button" id="random" onclick="generate_random_canvas()">Random</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/gow.js"></script>
+
+</body>
+</html>
